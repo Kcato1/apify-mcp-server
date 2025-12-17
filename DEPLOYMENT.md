@@ -15,7 +15,7 @@ This guide will help you pull a copy of the Apify MCP Server and deploy it on yo
 
 Before you begin, ensure you have the following installed on your local machine:
 
-1. **Node.js** (v20.0.0 or higher)
+1. **Node.js** (v20+)
    - Check version: `node --version`
    - Download from: https://nodejs.org/
 
@@ -272,7 +272,7 @@ npm run build
 
 #### 3. Node version incompatibility
 
-**Solution**: Verify you're using Node.js v20.0.0 or higher:
+**Solution**: Verify you're using Node.js v20+:
 
 ```bash
 node --version
