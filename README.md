@@ -32,6 +32,7 @@ The Apify Model Context Protocol (MCP) server at [**mcp.apify.com**](https://mcp
 ## Table of Contents
 - [🌐 Introducing the Apify MCP server](#-introducing-the-apify-mcp-server)
 - [🚀 Quickstart](#-quickstart)
+- [💻 Local Deployment](#-local-deployment)
 - [🤖 MCP clients](#-mcp-clients)
 - [🪄 Try Apify MCP instantly](#-try-apify-mcp-instantly)
 - [🛠️ Tools, resources, and prompts](#-tools-resources-and-prompts)
@@ -67,6 +68,39 @@ You can use the Apify MCP Server in two ways:
 - See `npx @apify/actors-mcp-server --help` for more options.
 
 You can find detailed instructions for setting up the MCP server in the [Apify documentation](https://docs.apify.com/platform/integrations/mcp).
+
+# 💻 Local Deployment
+
+Want to run the Apify MCP Server locally on your machine? Follow our comprehensive deployment guide:
+
+📖 **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete guide for local installation and setup
+
+### Quick Local Setup
+
+1. **Clone and install**:
+   ```bash
+   git clone https://github.com/apify/apify-mcp-server.git
+   cd apify-mcp-server
+   npm install
+   npm run build
+   ```
+
+2. **Configure your API token**:
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your APIFY_TOKEN
+   ```
+
+3. **Run the server**:
+   ```bash
+   # For stdio mode (Claude Desktop, etc.)
+   node dist/stdio.js
+   
+   # For development/HTTP mode
+   npm run start:dev
+   ```
+
+For detailed instructions, Docker deployment, troubleshooting, and more, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 # 🤖 MCP clients
 
